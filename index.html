@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <header>
+            <h1>VPN Поддержка</h1>
+            <div class="search-bar">
+                <input type="text" placeholder="🔍 Поиск по вопросам" id="faqSearch" onkeyup="searchFAQs()">
+            </div>
+        </header>
+
+        <section class="faq-section" id="faqSection">
+            <div class="faq-item" data-question="Как я получу подписку?" onclick="toggleAnswer(1)">
+                <div class="faq-header">
+                    <h3><i class="fas fa-question-circle"></i> Как я получу подписку?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <p id="answer1" class="answer">Вы получите подписку через код активации на указанную почту.</p>
+            </div>
+            <div class="faq-item" data-question="Могу ли я использовать подписку на нескольких устройствах?" onclick="toggleAnswer(2)">
+                <div class="faq-header">
+                    <h3><i class="fas fa-laptop"></i> Могу ли я использовать подписку на нескольких устройствах?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <p id="answer2" class="answer">Да, в зависимости от тарифа можно использовать на 5 устройствах одновременно.</p>
+            </div>
+            <div class="faq-item" data-question="Сколько ждать выполнения заказа?" onclick="toggleAnswer(3)">
+                <div class="faq-header">
+                    <h3><i class="fas fa-clock"></i> Сколько ждать выполнения заказа?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <p id="answer3" class="answer">Выполнение заказа обычно занимает до 5 минут после оплаты.</p>
+            </div>
+            <div class="faq-item" data-question="Как активировать подписку VPN?" onclick="toggleAnswer(4)">
+                <div class="faq-header">
+                    <h3><i class="fas fa-key"></i> Как активировать подписку VPN?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <p id="answer4" class="answer">Активируйте подписку через свой аккаунт на сайте VPN или в приложении.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Поддержка: <a href="mailto:support@vpn-service.com">support@vpn-service.com</a></p>
+            <p>@VPN_Bot</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
